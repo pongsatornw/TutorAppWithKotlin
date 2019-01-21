@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" app:cardCornerRadius="20dp">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/cardview_background" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="100">
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="10dp" android:layout_weight="10">
+            <ImageView android:id="@+id/imageView2" android:background="@color/colorWhite"
+                       android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@color/colorWhite" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:layout_weight="90" android:layout_marginEnd="10dp">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/people_name_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="100" android:layout_marginEnd="10dp">
+                <Space android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="5"/>
+                <TextView android:textSize="24sp" android:textStyle="bold" android:id="@+id/people_name" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="95"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/people_id_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="100" android:layout_marginEnd="10dp">
+                <Space android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="5"/>
+                <TextView android:textSize="24sp" android:textStyle="bold" android:id="@+id/people_id" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="95"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/people_gender_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="100" android:layout_marginEnd="10dp">
+                <Space android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="5"/>
+                <TextView android:textSize="24sp" android:textStyle="bold" android:id="@+id/people_gender" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="95"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/people_role_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="100" android:layout_marginEnd="10dp">
+                <Space android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="5"/>
+                <TextView android:textSize="24sp" android:textStyle="bold" android:id="@+id/people_role" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="95"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

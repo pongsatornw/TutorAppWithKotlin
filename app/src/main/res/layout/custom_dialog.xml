@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="100">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/my_border" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="100">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/my_border" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:backgroundTint="@color/colorDarkBlue">
+            <ImageView android:layout_gravity="center" android:id="@+id/imageView99" android:background="@color/colorDarkBlue" android:layout_width="25dp" android:layout_height="25dp" android:contentDescription="คำแนะนำ" app:srcCompat="@drawable/alert_icon"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="#0000ff" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="30sp" android:textColor="@android:color/white" android:id="@+id/txt_message" android:paddingTop="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="8sp" android:textAlignment="center"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="#0000cd" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <android.support.v7.widget.AppCompatButton android:textSize="24sp" android:textStyle="bold" android:textColor="@color/colorWhite" android:id="@+id/CompatBtn05" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="ใช่" android:shadowRadius="5" android:elevation="10dp" android:stateListAnimator="@null" android:backgroundTint="@color/darkOrange"/>
+            <android.support.v7.widget.AppCompatButton android:textSize="24sp" android:textStyle="bold" android:textColor="@color/colorWhite" android:id="@+id/CompatBtn06" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="ไม่ใช่" android:shadowRadius="5" android:elevation="10dp" android:stateListAnimator="@null" android:backgroundTint="@color/sun_red"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

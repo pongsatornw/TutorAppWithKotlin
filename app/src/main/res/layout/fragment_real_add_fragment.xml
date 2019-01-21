@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="8dp">
+    <LinearLayout android:orientation="horizontal" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="10"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:weightSum="100" android:layout_weight="80">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="10">
+            <TextView android:textSize="33sp" android:id="@+id/text_id" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:textAlignment="center"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="10"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="10">
+            <android.support.v7.widget.AppCompatEditText android:id="@+id/edt_id" android:layout_width="match_parent" android:layout_height="wrap_content" android:ems="10" android:layout_weight="1" android:inputType="textPersonName" android:textAlignment="center"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="5"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="10">
+            <android.support.v7.widget.AppCompatButton android:textSize="30sp" android:id="@+id/btn_add" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="เพิ่มนักเรียนเข้ารายวิชา" android:layout_weight="1" android:backgroundTint="@color/colorSky"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="10">
+            <android.support.v7.widget.AppCompatButton android:textSize="30sp" android:id="@+id/btn_res" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="ล้างข้อมูล" android:layout_weight="1" android:backgroundTint="@color/colorAccent"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="50">
+            <LinearLayout android:orientation="vertical" android:id="@+id/layout_progress" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="75dp">
+                <TextView android:textSize="27sp" android:id="@+id/textView5" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="กำลังดำเนินการ..." android:textAlignment="center"/>
+                <ProgressBar android:id="@+id/progressBar" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="20dp" style="?android:attr/progressBarStyle"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="10"/>
+</LinearLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "87782304542",
+    "firebase_url": "https://tutorsatul.firebaseio.com",
+    "project_id": "tutorsatul",
+    "storage_bucket": "tutorsatul.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:87782304542:android:ac9c9c2c36fda4fb",
+        "android_client_info": {
+          "package_name": "com.example.tutorapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "87782304542-tmlr0ofvacp57m24grfp3t89egtogevu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.user.tutorapp",
+            "certificate_hash": "a0f21a5b7b7524653594c89f3342b26eb6cc2b47"
+          }
+        },
+        {
+          "client_id": "87782304542-8m2c1oh9kinjlerrc8bknfn57tdohib7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPT4rHUuzD6mTdNXT-plWLFImUSDmWRck"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "87782304542-8m2c1oh9kinjlerrc8bknfn57tdohib7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

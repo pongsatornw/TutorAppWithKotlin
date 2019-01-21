@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="100">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_margin="8dp" android:layout_weight="70">
+        <TextView android:textSize="36sp" android:id="@+id/txt_course_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:textAlignment="center"/>
+        <Space android:layout_width="match_parent" android:layout_height="20dp"/>
+        <TextView android:textSize="33sp" android:id="@+id/txt_sheet_no" android:layout_width="match_parent" android:layout_height="wrap_content" android:textAlignment="center"/>
+    </LinearLayout>
+    <Space android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="5"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/linearLayout5" android:layout_width="match_parent" android:layout_height="0dp" android:layout_margin="8dp" android:layout_weight="25">
+        <Button android:textSize="30sp" android:id="@+id/button3" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="เข้าชั้นเรียนด้วยรหัสนักเรียน" android:textAllCaps="false" android:elevation="10dp" android:backgroundTint="@color/colorSky"/>
+        <Button android:textSize="30sp" android:id="@+id/button4" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="เข้าชั้นเรียนด้วย QR Code" android:textAllCaps="true" android:elevation="10dp" android:backgroundTint="@color/colorAccent"/>
+    </LinearLayout>
+</LinearLayout>

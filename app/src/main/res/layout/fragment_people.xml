@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent">
+
+    <android.support.v7.widget.AppCompatButton
+            android:id="@+id/bt_viewpeople"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="@string/view_people"
+            android:textColor="@color/colorWhite"
+            android:elevation="10dp"
+            android:textSize="36sp"
+            app:backgroundTint="@color/colorSky"
+            app:cornerRadius="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/bt_adddpeople"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.AppCompatButton
+            android:id="@+id/bt_adddpeople"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/add_people"
+            android:textColor="@color/colorWhite"
+            android:elevation="10dp"
+            android:textSize="36sp"
+            app:backgroundTint="@color/colorSky"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bt_viewpeople" />
+
+</android.support.constraint.ConstraintLayout>

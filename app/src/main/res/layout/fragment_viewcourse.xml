@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/layout5555" android:focusableInTouchMode="true" android:descendantFocusability="beforeDescendants" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="100">
+    <Spinner android:id="@+id/viewcourse_spinner" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="8dp" android:layout_marginBottom="5dp" android:layout_weight="7" android:layout_marginStart="8dp" android:layout_marginEnd="8dp"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="93" android:layout_marginStart="5dp">
+        <LinearLayout android:orientation="vertical" android:background="@color/colorWhite" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:layout_marginStart="8dp" android:layout_marginEnd="8dp">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/linearLayout0" android:background="@color/colorWhite" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="10">
+                <EditText android:id="@+id/search_coursename" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="ค้นหาโดยชื่อรายวิชา" android:ems="10" android:layout_weight="7.5" android:inputType="textPersonName"/>
+                <Space android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.5"/>
+                <android.support.v7.widget.AppCompatButton android:textSize="27sp" android:textColor="@color/colorWhite" android:id="@+id/search_coursename_btn" android:background="@color/midnightBlue" android:layout_width="0dp" android:layout_height="wrap_content" android:text="ค้นหา" android:layout_weight="2"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="10">
+                <AutoCompleteTextView android:id="@+id/search_coursecat" android:layout_width="0dp" android:layout_height="wrap_content" android:text="" android:hint="ค้นหาโดยหมวดหมู่รายวิชา" android:ems="10" android:layout_weight="7.5" android:inputType="textPersonName"/>
+                <Space android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.5"/>
+                <android.support.v7.widget.AppCompatButton android:textSize="27sp" android:textColor="@color/colorWhite" android:id="@+id/search_coursecat_btn" android:background="@color/midnightBlue" android:layout_width="0dp" android:layout_height="wrap_content" android:text="ค้นหา" android:layout_weight="2"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/linearLayout2" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="10">
+                <AutoCompleteTextView android:id="@+id/search_ins" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="ค้นหาโดยอาจารย์ผู้สอน" android:ems="10" android:layout_weight="7.5" android:inputType="textPersonName"/>
+                <Space android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.5"/>
+                <android.support.v7.widget.AppCompatButton android:textSize="27sp" android:textColor="@color/colorWhite" android:id="@+id/search_ins_btn" android:background="@color/midnightBlue" android:layout_width="0dp" android:layout_height="wrap_content" android:text="ค้นหา" android:layout_weight="2"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/linearLayout3" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="10">
+                <AutoCompleteTextView android:id="@+id/search_grade" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="ค้นหาโดยระดับชั้นการสอน" android:ems="10" android:layout_weight="7.5" android:inputType="textPersonName"/>
+                <Space android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.5"/>
+                <android.support.v7.widget.AppCompatButton android:textSize="27sp" android:textColor="@color/colorWhite" android:id="@+id/search_grade_btn" android:background="@color/midnightBlue" android:layout_width="0dp" android:layout_height="wrap_content" android:text="ค้นหา" android:layout_weight="2"/>
+            </LinearLayout>
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView android:id="@+id/recycle_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+</LinearLayout>

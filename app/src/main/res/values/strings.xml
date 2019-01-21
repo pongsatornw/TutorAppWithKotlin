@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">TutorApp</string>
+    <string name="acknowledge">รับทราบ</string>
+    <string name="add_course">เพิ่มข้อมูลรายวิชา</string>
+    <string name="add_people">เพิ่มข้อมูลบุคลากร</string>
+    <string name="cancel">ยกเลิก</string>
+    <string name="class_checkin">เปิดการลงเวลาเรียน</string>
+    <string name="confirm">ยืนยัน</string>
+    <string name="course_management">จัดการรายวิชา</string>
+    <string name="delete">ลบ</string>
+    <string name="delete_course">ลบข้อมูลรายวิชา</string>
+    <string name="delete_people">ลบข้อมูลบุคลากร</string>
+    <string name="edit">แก้ไข</string>
+    <string name="edit_course">แก้ไขข้อมูลรายวิชา</string>
+    <string name="edit_people">แก้ไขข้อมูลบุลคากร</string>
+    <string name="instructor_schedule_page">ตารางสอน</string>
+    <string name="logout">ออกจากระบบ</string>
+    <string name="main_page">หน้าหลัก</string>
+    <string name="people_management">จัดการบุคลากร</string>
+    <string name="q1">ท่านต้องการดำเนินการใดกับรายวิชานี้?</string>
+    <string name="self_info">ข้อมูลส่วนตัว</string>
+    <string name="student_schedule_page">ตารางเรียน</string>
+    <string name="studying_history">ประวัติการเข้าชั้นเรียน</string>
+    <string name="teaching_history">ประวัติการสอน</string>
+    <string name="title_activity_login2">Sign in</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="view_course">ตรวจสอบข้อมูลรายวิชา</string>
+    <string name="view_people">ตรวจสอบข้อมูลบุคลากร</string>
+
+    <string name="hint_userid"><font size = "24">รหัสประจำตัว</font></string>
+    <string name="hint_pwd"><font size = "24">รหัสผ่าน</font></string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+</resources>

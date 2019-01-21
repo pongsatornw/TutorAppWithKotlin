@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/gredient_info" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="4dp" android:weightSum="100">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/border" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="30">
+        <ImageView android:id="@+id/qr_image" android:background="@drawable/border" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="5dp" android:paddingStart="10dp" android:paddingEnd="10dp"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="30sp" android:textColor="@color/colorBlack" android:layout_gravity="center"
+                      android:id="@+id/txt_user_id" android:layout_width="match_parent"
+                      android:fontFamily="@font/thsaraban_family"
+                      android:layout_height="wrap_content" android:layout_marginBottom="10dp"
+                      android:textAlignment="viewStart" android:layout_marginStart="25dp"
+                      android:layout_marginEnd="5dp"/>
+            <TextView android:textSize="33sp" android:textColor="@color/colorBlack" android:layout_gravity="center"
+                      android:id="@+id/txt_role" android:layout_width="match_parent"
+                      android:fontFamily="@font/thsaraban_family"
+                      android:layout_height="wrap_content" android:layout_marginTop="10dp"
+                      android:textAlignment="viewStart" android:layout_marginStart="25dp"
+                      android:layout_marginEnd="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/border" android:paddingTop="10dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="5dp" android:layout_weight="17.5" android:paddingStart="10dp" android:paddingEnd="10dp">
+        <TextView android:textSize="27sp" android:textColor="@color/colorBlack" android:id="@+id/textView9"
+                  android:fontFamily="@font/thsaraban_family"
+                  android:layout_width="match_parent" android:layout_height="wrap_content" android:text="ชื่อ - สกุล"/>
+        <TextView android:textSize="27sp" android:textColor="@color/colorBlack" android:id="@+id/txt_name"
+                  android:fontFamily="@font/thsaraban_family"
+                  android:layout_width="match_parent" android:layout_height="match_parent"
+                  android:textAlignment="viewEnd" android:paddingStart="15dp" android:paddingEnd="15dp"/>
+    </LinearLayout>
+    <LinearLayout android:textColor="@color/colorBlack" android:orientation="vertical" android:background="@drawable/border" android:paddingTop="10dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="5dp" android:layout_weight="17.5" android:paddingStart="10dp" android:paddingEnd="10dp">
+        <TextView android:textSize="27sp" android:textColor="@color/colorBlack" android:id="@+id/textView10"
+                  android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:fontFamily="@font/thsaraban_family"
+                  android:text="เบอร์โทรศัพท์"/>
+        <TextView android:textSize="33sp" android:textColor="@color/colorBlack" android:id="@+id/txt_tel"
+                  android:layout_width="match_parent" android:layout_height="match_parent"
+                  android:fontFamily="@font/thsaraban_family"
+                  android:textAlignment="viewEnd" android:paddingStart="15dp" android:paddingEnd="15dp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/border" android:paddingTop="10dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="5dp" android:layout_weight="17.5" android:paddingStart="10dp" android:paddingEnd="10dp">
+        <TextView android:textSize="27sp" android:textColor="@color/colorBlack" android:id="@+id/textView11"
+                  android:fontFamily="@font/thsaraban_family"
+                  android:layout_width="match_parent" android:layout_height="wrap_content" android:text="อีเมล์"/>
+        <TextView android:textSize="33sp" android:textColor="@color/colorBlack" android:id="@+id/txt_email"
+                  android:fontFamily="@font/thsaraban_family"
+                  android:layout_width="match_parent" android:layout_height="match_parent"
+                  android:textAlignment="viewEnd" android:paddingStart="15dp" android:paddingEnd="15dp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/border" android:paddingTop="10dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="5dp" android:layout_weight="17.5" android:paddingStart="10dp" android:paddingEnd="10dp">
+        <TextView android:textSize="27sp" android:textColor="@color/colorBlack" android:id="@+id/textView12"
+                  android:fontFamily="@font/thsaraban_family"
+                  android:layout_width="match_parent" android:layout_height="wrap_content" android:text="เพศ"/>
+        <TextView android:textSize="33sp" android:textColor="@color/colorBlack" android:id="@+id/txt_gender"
+                  android:fontFamily="@font/thsaraban_family"
+                  android:layout_width="match_parent" android:layout_height="match_parent"
+                  android:textAlignment="viewEnd" android:paddingStart="15dp" android:paddingEnd="15dp"/>
+    </LinearLayout>
+</LinearLayout>

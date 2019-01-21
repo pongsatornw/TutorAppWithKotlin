@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             android:background="@drawable/gradientsky"
+                                             android:windowSoftInputMode="adjustNothing">
+
+    <EditText
+            android:id="@+id/edt_coursename"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:ems="10"
+            android:textSize="24sp"
+            android:fontFamily="@font/thsaraban_family"
+            android:hint="ชื่อรายวิชา"
+            android:inputType="textPersonName"
+            android:paddingStart="10dp"
+            android:paddingEnd="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/edt_coursecat"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <AutoCompleteTextView
+            android:id="@+id/edt_coursecat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:textSize="24sp"
+            android:fontFamily="@font/thsaraban_family"
+            android:cursorVisible="false"
+            android:ems="10"
+            android:hint="หมวดหมู่รายวิชา"
+            android:paddingStart="10dp"
+            android:paddingEnd="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/edt_coursedstart"
+            app:layout_constraintEnd_toStartOf="@+id/edt_coursegrade"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_coursename" />
+
+    <AutoCompleteTextView
+            android:id="@+id/edt_coursegrade"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:textSize="24sp"
+            android:fontFamily="@font/thsaraban_family"
+            android:ems="10"
+            android:hint="ระดับชั้น"
+            android:inputType="textPersonName"
+            android:paddingStart="10dp"
+            android:paddingEnd="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/edt_coursedend"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/edt_coursecat"
+            app:layout_constraintTop_toBottomOf="@+id/edt_coursename" />
+
+    <EditText
+            android:id="@+id/edt_coursedstart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:ems="10"
+            android:focusable="false"
+            android:hint="วันเริ่มต้นการสอน"
+            android:textSize="24sp"
+            android:fontFamily="@font/thsaraban_family"
+            android:inputType="phone"
+            android:paddingStart="10dp"
+            android:paddingEnd="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/edt_coursetstart"
+            app:layout_constraintEnd_toStartOf="@+id/edt_coursedend"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_coursecat" />
+
+    <EditText
+            android:id="@+id/edt_coursedend"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:ems="10"
+            android:focusable="false"
+            android:hint="วันสิ้นสุดการสอน"
+            android:inputType="textPersonName"
+            android:paddingStart="10dp"
+            android:paddingEnd="0dp"
+            android:textSize="24sp"
+            android:fontFamily="@font/thsaraban_family"
+            app:layout_constraintBottom_toTopOf="@+id/edt_coursetend"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/edt_coursedstart"
+            app:layout_constraintTop_toBottomOf="@+id/edt_coursegrade" />
+
+    <EditText
+            android:id="@+id/edt_coursetstart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:ems="10"
+            android:focusable="false"
+            android:textSize="24sp"
+            android:fontFamily="@font/thsaraban_family"
+            android:hint="เวลาเริ่มการสอน"
+            android:paddingStart="10dp"
+            android:paddingEnd="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/edt_coursepic"
+            app:layout_constraintEnd_toStartOf="@+id/edt_coursetend"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_coursedstart" />
+
+    <EditText
+            android:id="@+id/edt_coursetend"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:ems="10"
+            android:focusable="false"
+            android:hint="เวลาสิ้นสุด"
+            android:inputType="textPersonName"
+            android:paddingStart="10dp"
+            android:paddingEnd="0dp"
+            android:textSize="24sp"
+            android:fontFamily="@font/thsaraban_family"
+            app:layout_constraintBottom_toTopOf="@+id/edt_coursepic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/edt_coursetstart"
+            app:layout_constraintTop_toBottomOf="@+id/edt_coursedend" />
+
+    <AutoCompleteTextView
+            android:id="@+id/edt_coursepic"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:ems="10"
+            android:hint="อาจารย์ผู้สอน"
+            android:inputType="textPersonName"
+            android:paddingStart="10dp"
+            android:paddingEnd="0dp"
+            android:textSize="24sp"
+            android:fontFamily="@font/thsaraban_family"
+            app:layout_constraintBottom_toTopOf="@+id/edt_acyear"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_coursetstart" />
+
+    <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/my_border"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/bt_coursereset"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_acyear">
+
+        <TextView
+                android:id="@+id/txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="0dp"
+                android:paddingBottom="10dp"
+                android:text="วันที่มีการสอน"
+                android:textSize="24sp"
+                android:fontFamily="@font/thsaraban_family"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/my_border"
+                android:orientation="horizontal">
+
+            <LinearLayout
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical">
+
+                <CheckBox
+                        android:id="@+id/chk_coursesun"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="วันอาทิตย์"
+                        android:textSize="21sp"
+                        android:fontFamily="@font/thsaraban_family" />
+
+                <CheckBox
+                        android:id="@+id/chk_coursemon"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="วันจันทร์"
+                        android:textSize="21sp"
+                        android:fontFamily="@font/thsaraban_family" />
+
+                <CheckBox
+                        android:id="@+id/chk_coursetue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="วันอังคาร"
+                        android:textSize="21sp"
+                        android:fontFamily="@font/thsaraban_family" />
+
+                <CheckBox
+                        android:id="@+id/chk_coursewed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="วันพุทธ"
+                        android:textSize="21sp"
+                        android:fontFamily="@font/thsaraban_family" />
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical">
+
+                <CheckBox
+                        android:id="@+id/chk_coursethr"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="false"
+                        android:lineSpacingExtra="15sp"
+                        android:text="วันพฤหัสบดี"
+                        android:textSize="21sp"
+                        android:fontFamily="@font/thsaraban_family"/>
+
+                <CheckBox
+                        android:id="@+id/chk_coursefri"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="วันศุกร์"
+                        android:textSize="21sp"
+                        android:fontFamily="@font/thsaraban_family" />
+
+                <CheckBox
+                        android:id="@+id/chk_coursesat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="วันเสาร์"
+                        android:textSize="21sp"
+                        android:fontFamily="@font/thsaraban_family" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatButton
+            android:id="@+id/bt_coursereset"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="25dp"
+            android:background="@color/darkOrange"
+            android:text="ล้างข้อมูล"
+            android:textColor="@color/colorWhite"
+            android:textSize="27sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/bt_coursenext"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <android.support.v7.widget.AppCompatButton
+            android:id="@+id/bt_coursenext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="25dp"
+            android:background="@color/midnightBlue"
+            android:text="ยืนยัน"
+            android:textColor="@color/colorWhite"
+            android:textSize="27sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/bt_coursereset"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <EditText
+            android:id="@+id/edt_acyear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:paddingStart="10dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="0dp"
+            android:paddingBottom="10dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="8dp"
+            android:ems="10"
+            android:maxLength="4"
+            android:hint="ปีการศึกษา (ค.ศ.)"
+            android:inputType="number"
+
+            android:textSize="24sp"
+            android:fontFamily="@font/thsaraban_family"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_coursepic" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorBlack">#000000</color>
+
+    <color name="colorDarkBlue">#330f79</color>
+
+    <color name="colorMarine">#c8064d</color>
+
+    <color name="colorSky">#5270d2</color>
+
+    <color name="colorWhite">#ffffff</color>
+
+    <color name="common_google_signin_btn_text_dark_default">@android:color/white</color>
+
+    <color name="common_google_signin_btn_text_dark_disabled">#1f000000</color>
+
+    <color name="common_google_signin_btn_text_dark_focused">@android:color/black</color>
+
+    <color name="common_google_signin_btn_text_dark_pressed">@android:color/white</color>
+
+    <color name="common_google_signin_btn_text_light_default">#90000000</color>
+
+    <color name="common_google_signin_btn_text_light_disabled">#1f000000</color>
+
+    <color name="common_google_signin_btn_text_light_focused">#90000000</color>
+
+    <color name="common_google_signin_btn_text_light_pressed">#de000000</color>
+
+    <color name="darkOrange">#ff8c00</color>
+
+    <color name="design_default_color_primary">#3f51b5</color>
+
+    <color name="design_default_color_primary_dark">#303f9f</color>
+
+    <color name="fri_aqua">#00ffff</color>
+
+    <color name="ld_textInputError">#f44336</color>
+
+    <color name="lightGray">#d3d3d3</color>
+
+    <color name="midnightBlue">#191970</color>
+
+    <color name="mon_yellow">#ffff00</color>
+
+    <color name="sat_purple">#8a2be2</color>
+
+    <color name="shadow_end">#00000000</color>
+
+    <color name="shadow_start">#40000000</color>
+
+    <color name="sun_red">#ff0000</color>
+
+    <color name="thr_orange">#ffa500</color>
+
+    <color name="tue_pink">#ffb6c1</color>
+
+    <color name="viewfinder_border">#ffafed44</color>
+
+    <color name="viewfinder_laser">#ffcc0000</color>
+
+    <color name="viewfinder_mask">#60000000</color>
+
+    <color name="weak_orange">#ffdab4</color>
+
+    <color name="wed_green">#00ff7f</color>
+</resources>

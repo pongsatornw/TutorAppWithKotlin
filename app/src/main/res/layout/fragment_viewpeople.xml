@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:focusableInTouchMode="true" android:descendantFocusability="beforeDescendants" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="100">
+    <Spinner android:id="@+id/viewpeople_spinner" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="8dp" android:layout_marginBottom="5dp" android:layout_weight="7" android:layout_marginStart="8dp" android:layout_marginEnd="8dp"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="93" android:layout_marginStart="5dp">
+        <LinearLayout android:orientation="vertical" android:background="@color/colorWhite" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:layout_marginStart="8dp" android:layout_marginEnd="8dp">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/linear00" android:layout_width="match_parent" android:layout_height="match_parent">
+                <AutoCompleteTextView android:id="@+id/search_role" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="ค้นหาโดยบทบาทในระบบ" android:layout_weight="7.5"/>
+                <Space android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="0.5"/>
+                <android.support.v7.widget.AppCompatButton android:textSize="27sp" android:textColor="@color/colorWhite" android:id="@+id/search_role_btn" android:background="@color/midnightBlue" android:layout_width="0dp" android:layout_height="wrap_content" android:text="ค้นหา" android:layout_weight="2"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/linear01" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="10">
+                <EditText android:id="@+id/search_fname" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="ค้นหาโดยชื่อบุคลากร" android:ems="10" android:layout_weight="7.5" android:inputType="textPersonName"/>
+                <Space android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.5"/>
+                <android.support.v7.widget.AppCompatButton android:textSize="27sp" android:textColor="@color/colorWhite" android:id="@+id/search_fname_btn" android:background="@color/midnightBlue" android:layout_width="0dp" android:layout_height="wrap_content" android:text="ค้นหา" android:layout_weight="2"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/linear02" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="10">
+                <EditText android:id="@+id/search_lname" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="ค้นหาโดยนามสกุลบุคลากร" android:ems="10" android:layout_weight="7.5" android:inputType="textPersonName"/>
+                <Space android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.5"/>
+                <android.support.v7.widget.AppCompatButton android:textSize="27sp" android:textColor="@color/colorWhite" android:id="@+id/search_lname_btn" android:background="@color/midnightBlue" android:layout_width="0dp" android:layout_height="wrap_content" android:text="ค้นหา" android:layout_weight="2"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/linear03" android:layout_width="match_parent" android:layout_height="match_parent">
+                <EditText android:id="@+id/search_stu_id" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="ค้นหาโดยรหัสประจำตัว(นักศึกษา)" android:ems="10" android:layout_weight="7.5" android:inputType="textPersonName"/>
+                <Space android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.5"/>
+                <android.support.v7.widget.AppCompatButton android:textSize="27sp" android:textColor="@color/colorWhite" android:id="@+id/search_stu_id_btn" android:background="@color/midnightBlue" android:layout_width="0dp" android:layout_height="wrap_content" android:text="ค้นหา" android:layout_weight="2"/>
+            </LinearLayout>
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView android:id="@+id/recycle_view_people" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+</LinearLayout>
